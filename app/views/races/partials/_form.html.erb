@@ -1,5 +1,5 @@
 <div class="field">
-<%= form_for :race do |f| %>
+<%= form_for :race, url: races_path do |f| %>
   <%= f.label :title %>:
   <%= f.text_field :title %><br />
   <%= f.label :description %>:

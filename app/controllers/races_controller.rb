@@ -4,4 +4,9 @@ class RacesController < ApplicationController
 
   def new
   end
+
+  def create
+  	render text: params[:race]
+  	
+  end
 end
