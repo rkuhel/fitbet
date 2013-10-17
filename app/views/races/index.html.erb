@@ -6,6 +6,7 @@
 		<th>End</th>
 		<th>Budget</th>
 		<th>Player</th>
+		<th>Edit<th>
 	</thead>
 	<% @race.each do |race| %>
 	<tr>
@@ -15,6 +16,7 @@
 		<td><%= race.end %></td>
 		<td><%= race.budget %></td>
 		<td><%= race.player_id %></td>
+		<td><%= link_to 'Edit', edit_race_path(race) %></td>	
 	</tr>
 	<%end%>
 </table>

@@ -16,6 +16,19 @@ class RacesController < ApplicationController
   	@race = Race.find(params[:id])
   end
 
+  def edit
+  	@race = Race.find(params[:id])
+  end
+
+  def update
+  	@race = Race.find(params[:id])
+  	if @race.update(params[:race].permit(:title, :description, :start, :end, :budget, :player_id))
+  		redirect_to @race
+  	else
+  		render 'edit'
+  	end
+  end
+
   private 
   	def race_params
   		params.require(:race).permit(:title, :description, :start, :end, :budget, :player_id)
