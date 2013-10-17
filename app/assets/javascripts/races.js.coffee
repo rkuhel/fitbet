@@ -3,5 +3,5 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 jQuery ->
-	$('#article_published_on').datepicker(); 
-		
+	$('#race_start').datepicker(); 
+
