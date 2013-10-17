@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  start: 2013-10-17
+  end: 2013-10-17
+  budget: 9.99
+  player_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  start: 2013-10-17
+  end: 2013-10-17
+  budget: 9.99
+  player_id: 1

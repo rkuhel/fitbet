@@ -5,7 +5,6 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'haml'
-gem 'sqlite3'
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'

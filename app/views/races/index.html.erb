@@ -1,2 +1,20 @@
-<h1>Race#index</h1>
-<p>Find me in app/views/races/index.html.erb</p>
+<table>
+	<thead>
+		<th>Title</th>
+		<th>Description</th>
+		<th>Start</th>
+		<th>End</th>
+		<th>Budget</th>
+		<th>Player</th>
+	</thead>
+	<% @race.each do |race| %>
+	<tr>
+		<td><%= race.title %></td>
+		<td><%= race.description %></td>
+		<td><%= race.start %></td>
+		<td><%= race.end %></td>
+		<td><%= race.budget %></td>
+		<td><%= race.player_id %></td>
+	</tr>
+	<%end%>
+</table>
