@@ -9,9 +9,9 @@
 	<body>
 		<nav id="menu">
 			<ul>
-				<li>home</li>
-				<li>create race</li>
-				<li>view races</li>
+				<li><%= link_to "home", root_url %></li>
+				<li><%= link_to "view races", races_path %></li>
+				<li><%= link_to "create a race", new_race_path %></li>
 			</ul>
 		</nav>
 		<div id="container">
