@@ -29,6 +29,12 @@ class RacesController < ApplicationController
   	end
   end
 
+  def destroy 
+  	@race = Race.find(params[:id])
+  	@race.destroy
+  	redirect_to races_path
+  end
+
   private 
   	def race_params
   		params.require(:race).permit(:title, :description, :start, :end, :budget, :player_id)
