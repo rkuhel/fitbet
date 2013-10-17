@@ -3,5 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 jQuery ->
-	$('#race_start').datepicker(); 
+	$('#race_start').datepicker();
+	$('#race_end').datepicker(); 
 
