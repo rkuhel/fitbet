@@ -1,0 +1,14 @@
+<%= form_for :race do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+  <%= f.label :description %>:
+  <%= f.text_field :description %><br />
+  <%= f.label :start %>:
+  <%= select_datetime Date.today, :prefix => :start_date %><br />
+
+  <%= f.label :end %>:
+  <%= select_datetime Date.today, :prefix => :end_date %><br />
+  <%= f.label :budget %>:
+  <%= f.text_field :budget %>
+  <%= f.submit %>
+<% end %>
