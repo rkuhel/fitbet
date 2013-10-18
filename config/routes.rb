@@ -1,7 +1,7 @@
 FitbetApp::Application.routes.draw do
   
   
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacjs: "omniauth_callbacks" }
   # The priority is based upon order of creation: first created -> highest priority.
   get "welcome/index"
   get "races/index"
