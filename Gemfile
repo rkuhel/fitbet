@@ -5,6 +5,10 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'haml'
+gem 'fitgem'
+gem 'omniauth-fitbit'
+gem 'devise'
+
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
